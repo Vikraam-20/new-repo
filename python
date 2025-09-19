@@ -1,0 +1,14 @@
+# This function calculates the sum of numbers in a given range
+def sum_of_numbers(start, end):
+    total = 0
+    for number in range(start, end + 1):
+        total += number
+    return total
+
+# Taking user input
+start = int(input("Enter the start number: "))
+end = int(input("Enter the end number: "))
+
+# Calling the function with user inputs and displaying the result
+result = sum_of_numbers(start, end)
+print(f"The sum of numbers from {start} to {end} is: {result}")
